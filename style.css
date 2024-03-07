@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background: #0A0C1C;
+  overflow: hidden;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+.card-right {
+  position: relative;
+  background-color: #AB5CDB90; /* Cor de fundo que será exibida por cima da imagem */
+  border-radius: 0 8px 8px 0;
+}
+
+.card-right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  z-index: -1;
+}
+.card-content {
+  width: 440px;
+  height: 300px;
+}
+.card-left {
+  padding: 20px;
+  background: #1B1937;
+}
+h1 {
+  font-size: 36px;
+}
+h1 span {
+  color: #AB5CDB;
+}
+p{
+  font-weight: 200;
+  margin-top: 25px;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.card-text {
+  color: #fff;
+  font-size: 24px;
+}
+.card-text span {
+  display: block;
+  font-size: 12px;
+  font-weight: 200;
+}
+@media only screen and (max-width: 880px) {
+  .card-content {
+  width: 440px;
+  }
+  .card-right img {
+    border-radius: 0 0 8px 8px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .card-content {
+    width: 340px;
+    }
+    h1 {
+      font-size: 25px;
+    }
+}
